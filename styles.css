@@ -1,0 +1,118 @@
+html {
+        box-sizing:border-box;
+        background-color:#f0f0f0;
+      }
+body {
+    padding:1rem 0;
+}
+
+.code-container, .terminal {
+    background-color:#330055;
+    padding:1rem;
+    color:cyan;
+}
+
+.terminal {
+    background-color:#002233;
+    color:white;
+    padding:0.5rem 1rem;
+}
+main {
+    position:absolute;
+    left:14rem;
+}
+.terminal > code::before {
+    content:'C:/xampp/htdocs/>';
+    display:inline;
+}
+
+.php {
+    color: white;
+}
+.php::before {
+    content:"<?php";
+}
+
+.php::after {
+    content: "";
+    display:block;
+    margin-bottom:1rem;
+}
+
+.pink {
+    color:hotpink;
+}
+
+.define::after {
+    content:' = ';
+    color:white;
+}
+
+.lime {
+    color:lime;
+}
+
+.line::after {
+    content:';';
+    color:white;
+    margin-left:-5px;
+}
+
+.endl::after {
+    content:'';
+    display:block;
+}
+
+.orange {
+    color:orange;
+}
+
+.comment {
+    color:663388;
+}
+
+.comment::before {
+    content: '// ';
+}
+.white {
+    color:white;
+}
+
+.clear {
+    clear:both;
+}
+
+#navbar{
+    padding: 1rem 0.5rem 0;
+    top:0;
+    bottom:0;
+    left:0;
+    position:fixed;
+    border-right:1px solid gray;
+}
+
+#navbar ul {
+    list-style:none;
+}
+.nav-link {
+    position:relative;
+    left:-2rem;
+    font-size:1.2rem;
+    text-decoration:none;
+    color:gray;
+}
+
+#navbar li {
+    margin-top:1rem;
+}
+#navbar li:hover a{
+    color:black;
+}
+header {
+    font-size:2rem;
+}
+
+a {
+    color:hotpink;
+    font-weight:bold;
+}

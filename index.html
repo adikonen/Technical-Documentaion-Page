@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>PHP DOC</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Installation">Installation</a></li>
+        <li><a class="nav-link" href="#Hello_World">Hello World</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li><a class="nav-link" href="#Condition">Condition</a></li>
+        <li><a class="nav-link" href="#Operator">Operator</a></li>
+        <li><a class="nav-link" href="#Logical_Operator">Logical Operator</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <p>PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.</p>
+        <p>Learn the PHP by CLI first, if you understand like define variable, conditional statement, loop statement, data structure. Feel Free to learn make PHP Web Application.</p>
+      </section>
+
+      <section class="main-section" id="Installation">
+        <header>Installation</header>
+        <p>Quick Way to install Apache, PHP and Mysql</p>
+        <ul>
+          <li><a href="https:ww.apachefriends.org/download.html">Click Here</a> to visit xampp download</li>
+          <li>Choose download according to your operational system then click download</li>
+          <li>Open installer, then just click next until finish</li> 
+        </ul>
+      </section>
+      <section class="main-section" id="Hello_World">
+        <header>Hello World</header>
+        <p>To get started with PHP, write your first "Hello World" in your VSCode</p>
+        <div class="code-container">
+        <code>
+          <b class="php"></b>
+          <span class="line">
+            <b class="pink define">$name</b>
+            <b class="lime">'World!'</b>
+          </span>
+          <br>
+         
+          <span class="line">
+            echo <b class="lime">'Hello'</b> . <b class="pink">$name</b>
+          </span>
+        </code>
+        </div>
+        <p>To run PHP. Save it as index.php then CTRL + ` to open  vscode terminal then write "php index.php" on your vscode terminal.</p>
+        <p>The result will show like this : </p>
+        <div class="terminal">
+          <code>
+            <span class="endl">php index.php</span>
+            Hello World!
+          </code>
+        </div>
+        <p>Note! PHP endline with semicolon <strong>(;)</strong></p>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>In PHP, a variable starts with the $ sign, followed by the name of the variable</p>
+        <div class="code-container">
+          <code>
+            <b class="php"></b>
+            <b class="comment">$name called string </b>
+            <p class="line">
+              <b class="pink define">$name</b>
+              <b class="lime">'Sandika'</b>
+            </p>
+            <b class="comment">$age called int </b>
+            <p class="line">
+              <b class="pink define">$age</b>
+              <b class="orange">20</b>  
+            </p>
+            <b class="comment">$money called float </b>
+            <p class="line">
+              <b class="pink define">$money</b>
+              <b class="orange">20.4</b>  
+            </p>
+            <b class="comment">$isMale called bool </b>
+            <p class="line">
+              <b class="pink define">$isMale</b>
+              <b>true</b>  
+            </p>
+          </code>
+        </div>
+        <p>If you run this code, it will not shown the result. Because the variable only store the value in it. To show the variable value use <strong>echo</strong> function.</p>
+        <div class="code-container">
+          <code>
+            <b class="php"></b>
+            <p class="line">
+              <b class="pink define">$name</b>
+              <b class="lime">'Sandika'</b>
+            </p>
+            <p class="line">
+              <b class="pink define">$age</b>
+              <b class="orange">20</b>  
+            </p>
+            <p class="line">
+              <b class="pink define">$money</b>
+              <b class="orange">20.4</b>  
+            </p>
+            <p class="line">
+              <b class="pink define">$isMale</b>
+              <b>true</b>  
+            </p>
+            <b class="comment">will print Sandika</b>
+            <p class="line">
+              echo <b class="pink">$name</b> 
+            <p>
+          </code>
+        </div>
+        <p>NOTE! PHP automatically associates a data type to the variable, depending on its value. Since the data types are not set in a strict sense, you can do things like adding a string to an integer without causing an error.</p>
+      </section>
+
+      <section class="main-section" id="Condition">
+        <header>Condition</header>
+        <p>If Statement is set a condition to program what it should do if the statement is fullfiled</p>
+        <div class="code-container">
+          <b class="php"></b>
+          <p class="line">
+            <b class="pink define">$statement</b>
+            false
+          </p>
+          <b class="pink">if <b class="white">(<b class="pink"> $statement </b>) {</b></b>
+          <br>
+          <br><b class="comment">... do something here</b>
+          <br>
+          <br><b class="white">}</b>
+          <b class="pink">elseif <b class="white">(<b class="pink"> $statment </b>) {</b></b>
+          <br>
+          <br>
+          <b class="comment">... do something here if the first if is not filled</b>
+          <br>
+          <br>
+          <b class="white">}</b>
+          <b class="pink">else <b class="white">{</b></b>
+          <br>
+          <br>
+          <b class="comment">... do something if all if and elseif statement not filled</b>
+          <br>
+          <br>
+          <b class="white">}</b>
+        </div>  
+        <p>The value of statement must be true to execute if statement, if false the else statement will executed</p>
+      </section>
+      <section class="main-section" id="Operator">
+        <header>Operator</header>
+        <p>There are some operator in PHP :</p>
+        <ul>
+          <li>Logical Operator (basically used in logical statement like if, while)</li>
+          <li>Assignment operator (to assign a variable with value)</li>
+          <li>Aritmathematic Operator (+, -, /, *)</li>
+        </ul>
+      </section>
+      <section class="main-section" id="Logical_Operator">
+        <header>Logical Operator</header>
+        <p>In PHP Logical Operator include:</p>
+        <ul>
+          <li>And (&&) return true if first expression and second expression are true</li>
+          <li>Or (||)vreturn true if atleast one of first expression or second expression are true</li>
+        </ul>
+        <p>Here example used of logical operator</p>
+        <div class="code-container">
+          <code>
+            <b class="php"></b>
+            <p class="line">
+              <b class="pink define">$isValidAdmin</b>
+              <b class="pink">$name</b>
+              <b class="white">==</b>
+              <b class="lime">'admin'</b>
+              <b class="white">&&</b>
+              <b class="pink">$password</b>
+              <b class="white">==</b>
+              <b class="lime">'#admin123!'</b>
+            </p>
+            <p>
+              <b class="pink">if </b><b class="white">(<b class="pink">$isValidAdmin</b>) {</b> <br>
+              &nbsp&nbsp echo <b class="lime">'Access Granted!'</b><b class="white">; <br />}</b>
+            </p>
+            <p>
+              <p class="comment">Forbidden if $name not admin and $password not #admin123</p>
+              <b class="pink">else</b>
+              http_response_code(<b class="orange">403</b>) 
+              <b class="white">;</b>
+            </p>
+          </code>
+        </div>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <p>All documentation is taken from <a href="https://www.w3schools.com/php/default.asp">W3 School</a></p>
+      </section>
+    </main>
+    <div class="clear"></div>
+  </body>
+</html>
